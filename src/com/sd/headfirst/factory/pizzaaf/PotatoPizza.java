@@ -10,5 +10,6 @@ public class PotatoPizza extends Pizza{
     System.out.println("Prepare");
     ingredientFactory.createDough();
     ingredientFactory.createCheese();
+    ingredientFactory.createPotato();
   }
 }

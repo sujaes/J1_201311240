@@ -5,7 +5,7 @@ public class PizzaTestDrive {
         Pizza pizza = nyStore.orderPizza("cheese");
         System.out.println("Ethan ordered a " + pizza + "\n");
         PizzaStore chicagoStore = new ChicagoPizzaStore();
-        Pizza pizza1 = chicagoStore.orderPizza("cheese");
+        Pizza pizza1 = chicagoStore.orderPizza("potato");
         System.out.println("Sujae ordered a " + pizza1 + "\n");
         
  }

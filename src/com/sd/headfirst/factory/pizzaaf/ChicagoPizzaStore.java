@@ -4,9 +4,8 @@ public class ChicagoPizzaStore extends PizzaStore{
   Pizza createPizza(String type){
     Pizza pizza =null;
     PizzaIngredientFactory ingredientFactory=new ChicagoPizzaIngredientFactory();
-    if(type.equals("cheese")){
-      //pizza = new NYStyleCheesePizza();
-      pizza = new CheesePizza(ingredientFactory);
+    if(type.equals("potato")){
+      pizza = new PotatoPizza(ingredientFactory);
     }
     return pizza;
   }

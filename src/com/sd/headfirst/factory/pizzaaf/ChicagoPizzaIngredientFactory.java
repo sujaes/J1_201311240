@@ -2,9 +2,9 @@ package com.sd.headfirst.factory.pizzaaf;
 
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory{
   public Dough createDough(){
-    return new ThinCrustDough();
+    return new ThickCrustDough();
   }
   public Cheese createCheese(){
-    return new ReggianoCheese();
+    return new MozzarellaCheese();
   }
 }

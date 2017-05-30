@@ -25,11 +25,15 @@ public class DaoMainV0 {
           prop.getProperty("USER"),
           prop.getProperty("PASSWORD")
           );
-          //conn = DriverManager.getConnection("jdbc:mysql://localhost/test", "root", "jang201311240");
-          String mySql="CREATE TABLE persons(id int(64) NOT NULL AUTO_INCREMENT,";
-          mySql+="name varchar(255) NOT NULL, address varchar(255) NOT NULL, UNIQUE (id))";
+//          conn = DriverManager.getConnection("jdbc:mysql://localhost/test", "root", "jang201311240");
+//          String mySql="CREATE TABLE persons(id int(64) NOT NULL AUTO_INCREMENT,";
+//          mySql+="name varchar(255) NOT NULL, address varchar(255) NOT NULL, UNIQUE (id))";
           stmt=conn.createStatement();
-          stmt.execute(mySql);
+//        stmt.execute(mySql);
+//          stmt.execute("INSERT INTO persons(name,address) VALUES('v0-1','1 Hongji Dong')");
+//          stmt.execute("INSERT INTO persons(name,address) VALUES('v0-2','2 Hongji Dong')");
+//          stmt.execute("INSERT INTO persons(name,address) VALUES('v0-3','3 Hongji Dong')");
+          rs = stmt.executeQuery("select name from persons where id<4 order by id;");
           while (rs.next()) {
             System.out.println(rs.getString("name"));
           }

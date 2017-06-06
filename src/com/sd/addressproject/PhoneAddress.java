@@ -5,7 +5,7 @@ public class PhoneAddress {
  public PhoneAddress(Updater updater){
   this.updater = updater;
  }
- public void upd(){
+ public void upd(){ //command
   updater.update();
  }
 }

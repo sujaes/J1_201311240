@@ -14,10 +14,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class AddressMain{
-
  JFrame appFrame;
  JLabel jlbName, jlbPhone;
- JTextField jtfName, jtfPhone;
+ static JTextField jtfName;
+ static JTextField jtfPhone;
  JButton jbbSave, jbnDelete, jbnClear, jbnExit;
  String name;
  int phone;
@@ -27,7 +27,6 @@ public class AddressMain{
  }
  public AddressMain() {
   createGUI();
-  
  }
  public void createGUI(){
      appFrame = new JFrame("Address");
@@ -37,7 +36,8 @@ public class AddressMain{
      appFrame.setSize(240,300);
      appFrame.setResizable(false);
      appFrame.setVisible(true);
-    } public void arrangeComponents() {
+    } 
+ public void arrangeComponents() {
   jlbName = new JLabel("Name");
   jlbPhone = new JLabel("Phone");
   jtfName = new JTextField(20);
